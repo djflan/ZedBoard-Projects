@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.08111",
+   "Default View_TopLeft":"-717,5",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_o_slow_clock_1 -pg 1 -lvl 3 -x 510 -y 190 -defaultsOSRD
+preplace port port-id_i_master_clock_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_o_slow_clock_0 -pg 1 -lvl 3 -x 510 -y 70 -defaultsOSRD
+preplace port port-id_o_slow_clock_2 -pg 1 -lvl 3 -x 510 -y 310 -defaultsOSRD
+preplace port port-id_o_slow_clock_3 -pg 1 -lvl 3 -x 510 -y 430 -defaultsOSRD
+preplace port port-id_o_slow_clock_4 -pg 1 -lvl 3 -x 510 -y 550 -defaultsOSRD
+preplace port port-id_o_slow_clock_5 -pg 1 -lvl 3 -x 510 -y 670 -defaultsOSRD
+preplace port port-id_o_slow_clock_6 -pg 1 -lvl 3 -x 510 -y 790 -defaultsOSRD
+preplace port port-id_o_slow_clock_7 -pg 1 -lvl 3 -x 510 -y 910 -defaultsOSRD
+preplace inst clock_divider_1 -pg 1 -lvl 2 -x 340 -y 190 -defaultsOSRD
+preplace inst const_reset_1 -pg 1 -lvl 1 -x 100 -y 120 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 2 -x 340 -y 70 -defaultsOSRD
+preplace inst clock_divider_2 -pg 1 -lvl 2 -x 340 -y 310 -defaultsOSRD
+preplace inst clock_divider_3 -pg 1 -lvl 2 -x 340 -y 430 -defaultsOSRD
+preplace inst clock_divider_4 -pg 1 -lvl 2 -x 340 -y 550 -defaultsOSRD
+preplace inst clock_divider_5 -pg 1 -lvl 2 -x 340 -y 670 -defaultsOSRD
+preplace inst clock_divider_6 -pg 1 -lvl 2 -x 340 -y 790 -defaultsOSRD
+preplace inst clock_divider_7 -pg 1 -lvl 2 -x 340 -y 910 -defaultsOSRD
+preplace netloc clock_divider_0_o_slow_clock 1 2 1 NJ 70
+preplace netloc clock_divider_1_o_slow_clock 1 2 1 NJ 190
+preplace netloc i_master_clock_0_1 1 0 2 NJ 60 190
+preplace netloc xlconstant_1_dout 1 1 1 200 80n
+preplace netloc clock_divider_2_o_slow_clock 1 2 1 NJ 310
+preplace netloc clock_divider_3_o_slow_clock 1 2 1 NJ 430
+preplace netloc clock_divider_4_o_slow_clock 1 2 1 NJ 550
+preplace netloc clock_divider_5_o_slow_clock 1 2 1 NJ 670
+preplace netloc clock_divider_6_o_slow_clock 1 2 1 NJ 790
+preplace netloc clock_divider_7_o_slow_clock 1 2 1 NJ 910
+levelinfo -pg 1 0 100 340 510
+pagesize -pg 1 -db -bbox -sgen -170 0 660 980
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 27 20:55:22 2025" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="avnet.com:zedboard:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock_0" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_2" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_3" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_4" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_5" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_6" PORT="i_master_clock"/>
+        <CONNECTION INSTANCE="clock_divider_7" PORT="i_master_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_0" SIGIS="clk" SIGNAME="clock_divider_0_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_1" SIGIS="clk" SIGNAME="clock_divider_1_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_2" SIGIS="clk" SIGNAME="clock_divider_2_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_2" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_3" SIGIS="clk" SIGNAME="clock_divider_3_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_3" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_4" SIGIS="clk" SIGNAME="clock_divider_4_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_4" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_5" SIGIS="clk" SIGNAME="clock_divider_5_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_5" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_6" SIGIS="clk" SIGNAME="clock_divider_6_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_6" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock_7" SIGIS="clk" SIGNAME="clock_divider_7_o_slow_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_7" PORT="o_slow_clock"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="100000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_0_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_1" HWVERSION="1.0" INSTANCE="clock_divider_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_1_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_2" HWVERSION="1.0" INSTANCE="clock_divider_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_2_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_3" HWVERSION="1.0" INSTANCE="clock_divider_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_3_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_4" HWVERSION="1.0" INSTANCE="clock_divider_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="6"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_4_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_5" HWVERSION="1.0" INSTANCE="clock_divider_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_5_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_5"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_6" HWVERSION="1.0" INSTANCE="clock_divider_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_6_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_6"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_7" HWVERSION="1.0" INSTANCE="clock_divider_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MASTER_CLOCK_FRQ" VALUE="1000000000"/>
+        <PARAMETER NAME="SLOW_CLOCK_FRQ" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_master_clock" SIGIS="clk" SIGNAME="External_Ports_i_master_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_master_clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="const_reset_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="o_slow_clock" SIGIS="clk" SIGNAME="clock_divider_7_o_slow_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_slow_clock_7"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/const_reset_1" HWVERSION="1.1" INSTANCE="const_reset_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="const_reset_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_2" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_3" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_4" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_5" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_6" PORT="i_reset"/>
+            <CONNECTION INSTANCE="clock_divider_7" PORT="i_reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
